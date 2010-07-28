@@ -6,6 +6,7 @@ Wordpress child theme for my.skule.ca, based on buddymatic. Integrates Buddypres
 Prerequisites
 ------------
 You should know:
+
   *   PHP
   *   Wordpress (+ Child Themes)
   *   Buddypress
