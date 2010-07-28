@@ -1,0 +1,17 @@
+/*
+Theme Name: Custom Theme: MySkule
+Theme URI: http://my.skule.ca/
+Description: Theme for my.skule.ca
+Version: 0.1
+Author: Skule Web Services
+Author URI: http://sws.skule.ca/
+Template: bp-default
+Tags: buddypress, two-column
+*/
+
+/* Inherit the default theme styles */
+@import url( ../../plugins/buddypress/bp-themes/bp-default/_inc/css/default.css );
+
+/* Inherit the default theme adminbar styles */
+@import url( ../../plugins/buddypress/bp-themes/bp-default/_inc/css/adminbar.css );
+
