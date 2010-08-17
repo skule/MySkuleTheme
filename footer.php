@@ -28,7 +28,7 @@
 
 <div id="footer">
 <div id="footerleft">
-<p>Powered by <a href="http://www.wordpress.org/">WordPress</a>. Theme: <a href="http://85ideas.com/public-releases/wordpress-theme-pixel/" title="Pixel">Pixel</a>. Sweet icons by <a href="http://famfamfam.com/">famfamfam</a>. <a href="#main">Back to top &uarr;</a></p>
+<p>Powered by <a href="http://www.wordpress.org/">WordPress</a>. SkuleTheme based on <a href="http://85ideas.com/public-releases/wordpress-theme-pixel/" title="Pixel">Pixel</a>. Sweet icons by <a href="http://famfamfam.com/">famfamfam</a>. <a href="#main">Back to top &uarr;</a></p>
 </div>
 
 <div id="footerright">
