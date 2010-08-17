@@ -24,6 +24,8 @@
 <![endif]-->
 
 <?php wp_enqueue_script( 'sfhover', get_template_directory_uri() . '/js/sfhover.js' ); ?>
+
+<?php if (isset($need_jquery)) echo "<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js' type='text/javascript'></script>"; ?>
 <?php wp_head(); ?>
 </head>
 
