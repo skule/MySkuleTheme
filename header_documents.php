@@ -25,8 +25,23 @@
 
 <?php wp_enqueue_script( 'sfhover', get_template_directory_uri() . '/js/sfhover.js' ); ?>
 
-<?php if (isset($need_jquery)) echo "<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js' type='text/javascript'></script>"; ?>
 <?php wp_head(); ?>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js' type='text/javascript'></script>
+<script src='<?php bloginfo('stylesheet_directory'); ?>/jqueryfiletree/jqueryFileTree.js' type='text/javascript'></script>
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/jqueryfiletree/jqueryFileTree.css" type="text/css" media="screen" />
+<style>
+	#fileTree {
+				width: 550px;
+				border-top: solid 1px #BBB;
+				border-left: solid 1px #BBB;
+				border-bottom: solid 1px #FFF;
+				border-right: solid 1px #FFF;
+				background: #000;
+				color:#fff;
+				overflow: scroll;
+				padding: 4px;
+			}
+</style>
 </head>
 
 <body>
@@ -55,18 +70,14 @@
 
 
 <div id="catnav">
+<!--
+<div id="toprss"><a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/rss-trans.png" alt="<?php bloginfo('name'); ?>" width="65" height="24" /></a></div>
+    Closes toprss -->
 
-
- <div id="nav">
- <ul>
-<?php
-if(function_exists('bcn_display'))
-{
-	bcn_display();
-}
-?>
+<ul id="nav">
+  <li><a href="<?php echo get_option('home'); ?>">Home</a></li>
+  <?php wp_list_categories('sort_column=name&title_li=&depth=2'); ?>
 </ul>
-</div>
 </div> <!-- Closes catnav -->
 
 <div class="cleared"></div>

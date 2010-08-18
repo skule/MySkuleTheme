@@ -1,10 +1,10 @@
-<?php 
-$need_jquery = true;
-get_header(); 
+<?php
+/*
+Template Name: Documents
+*/
+include "header_documents.php";
 ?>
-
 <div id="main">
-
 <div id="contentwrapper">
 
 <?php if (have_posts()) : ?>
@@ -29,6 +29,20 @@ get_header();
 </div> <!-- Closes topPost -->
 
 <?php endif; ?>
+<script type='text/javascript'>
+$(document).ready( function() {
+    $('#fileTree').fileTree({
+        script: '<?php bloginfo('stylesheet_directory'); ?>/jqueryfiletree/jqueryFileTree.php',
+        expandSpeed: -1,
+        collapseSpeed: -1,
+      }, function(file) {
+        alert(file);
+    });
+});
+</script>
+<div id='fileTree'>
+</div>
+
 
 </div> <!-- Closes contentwrapper-->
 
