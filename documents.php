@@ -32,7 +32,7 @@ include "header_documents.php";
 <script type='text/javascript'>
 $(document).ready( function() {
     $('#fileTree').fileTree({
-        script: '<?php bloginfo('stylesheet_directory'); ?>/jqueryfiletree/jqueryFileTree.php',
+        script: '/wp-content/themes/myskule/jqueryfiletree/jqueryFileTree.php',
         expandSpeed: -1,
         collapseSpeed: -1,
       }, function(file) {
