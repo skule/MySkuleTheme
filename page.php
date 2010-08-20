@@ -14,7 +14,7 @@
   <span class="linkpages"><?php wp_link_pages(); ?></span>
 <div class="cleared"></div>
 </div> <!-- Closes topPost -->
-<br/><small><?php edit_post_link('Edit this entry?','',''); ?></small>
+<!--<br/><small><?php edit_post_link('Edit this entry?','',''); ?></small>-->
 
 <?php endwhile; ?>
 

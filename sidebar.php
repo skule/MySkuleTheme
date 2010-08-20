@@ -17,15 +17,7 @@
  </ul>
  </div>
  </li>
-
- <li>
- <div class="sidebarbox">
- <h2>Browse by tags</h2>
- <?php wp_tag_cloud('smallest=8&largest=17&number=30'); ?>
- </div>
- </li>
-
-<?php endif; ?>
+ <?php endif; ?>
 
 </ul>
 </div><!-- Closes Sidebar_full -->

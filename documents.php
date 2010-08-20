@@ -32,6 +32,7 @@ include "header_documents.php";
 <script type='text/javascript'>
 $(document).ready( function() {
     $('#fileTree').fileTree({
+		root: <?php echo $_SERVER['DOCUMENT_ROOT'] . '/engsoc-documents/documents'; ?>,
         script: '../../jqueryFileTree.php',
         expandSpeed: -1,
         collapseSpeed: -1,

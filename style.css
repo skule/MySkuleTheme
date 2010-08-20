@@ -595,6 +595,7 @@ textarea#comment {
 #sidebars .sidebarbox {
   background: url(images/bg-trans.png) repeat;
   padding: 2px 15px;
+  border:1px solid #000;
   }
 
 #sidebar_full {
@@ -631,7 +632,7 @@ textarea#comment {
   }
 
 #sidebars li {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   list-style: none;
   font-size: 9pt;
   }

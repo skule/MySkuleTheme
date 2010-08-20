@@ -75,8 +75,13 @@
     Closes toprss -->
 
 <ul id="nav">
-  <li><a href="<?php echo get_option('home'); ?>">Home</a></li>
-  <?php wp_list_categories('sort_column=name&title_li=&depth=2'); ?>
+ <ul>
+<?php
+if(function_exists('bcn_display'))
+{
+	bcn_display();
+}
+?>
 </ul>
 </div> <!-- Closes catnav -->
 
