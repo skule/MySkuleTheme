@@ -617,11 +617,11 @@ textarea#comment {
   }
 
 #sidebars h2, #main #welcome h2 {
-  margin: 0;
+  margin: 0 0 3px 0;
   padding: 5px 0 5px 5px;
   font-weight: normal;
   font-size: 14pt;
-  color: #fff;
+  color: #eeeeee;
   letter-spacing: -2px;
   border-bottom:1px solid #0e2944; 
   }
