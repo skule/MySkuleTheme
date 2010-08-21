@@ -38,7 +38,7 @@ $(document).ready( function() {
       }, function(file) {
 		root_path = '<?php echo $_SERVER['DOCUMENT_ROOT'] . '/engsoc-documents/documents/'; ?>' 	 ;
 		
-        alert(file.substr(root_path.length()));
+        alert(file.substr(root_path.length));
     });
 });
 </script>
