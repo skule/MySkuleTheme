@@ -50,7 +50,7 @@ var uservoiceOptions = {
   showTab: true,  
   /* optional */
   alignment: 'left',
-  background_color:'#f00', 
+  background_color:'#285ebf', 
   text_color: 'white',
   hover_color: '#06C',
   lang: 'en'
