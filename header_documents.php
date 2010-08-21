@@ -31,7 +31,7 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/jqueryFileTree/jqueryFileTree.css" type="text/css" media="screen" />
 <style>
 	#fileTree {
-				width: 550px;
+				width: 530px;
 				border-top: solid 1px #BBB;
 				border-left: solid 1px #BBB;
 				border-bottom: solid 1px #FFF;
