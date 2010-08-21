@@ -27,14 +27,6 @@
 <ul>
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar_left') ) : ?>
 
-<li>
-<div class="sidebarbox">
-<h2>Categories</h2>
-<ul>
-  <?php wp_list_categories('show_count=0&title_li='); ?>
-</ul>
-</div>
-</li>
 
 <?php endif; ?>
 </ul>

@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Verdana;
   }
 
+  
 hr {
   color: #333;
   border: 1px solid #121212;
@@ -130,22 +131,26 @@ body {
 }
 #header #topright ul {
   list-style: none;
-  padding: 0;
+  padding-top: 2px;
   margin: 0;
   }
 #header #topright li {
   display: inline;
+  background: url(images/separator.png) left no-repeat;
+  padding:13px 0;
   }
 #header #topright li a {
-  color: #fff;
+  color: #eaeaea;
   font-size: 12pt;
   font-weight:bold;
-  padding: 0 25px 0 25px;
+  padding: 0 15px 0 25px;
+  line-height:25px;
   font-variant: small-caps;
   }
 #header #topright li a:hover {
-  color: #ccc;
-  text-decoration: none;
+  color: #fff;
+   text-decoration:underline;
+
   }
 
 #header #logo {
