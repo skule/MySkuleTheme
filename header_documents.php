@@ -27,8 +27,8 @@
 
 <?php wp_head(); ?>
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js' type='text/javascript'></script>
-<script src='<?php bloginfo('stylesheet_directory'); ?>/jqueryfiletree/jqueryFileTree.js' type='text/javascript'></script>
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/jqueryfiletree/jqueryFileTree.css" type="text/css" media="screen" />
+<script src='<?php bloginfo('stylesheet_directory'); ?>/jqueryFileTree/jqueryFileTree.js' type='text/javascript'></script>
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/jqueryFileTree/jqueryFileTree.css" type="text/css" media="screen" />
 <style>
 	#fileTree {
 				width: 550px;
