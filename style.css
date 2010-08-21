@@ -651,10 +651,12 @@ textarea#comment {
   padding: 2px 2px 2px 16px;
   color: #eee;
   
-  background: url(images/flag.png) left 8px no-repeat;
+  background: url(images/link.png) left 8px no-repeat;
   line-height: 20px; /* Required for cross-browser consistency; cross-browser defaults vary. */
   }
-
+#sidebars ul ul li.announcement {
+  background: url(images/flag.png) left 8px no-repeat;
+  }
 #sidebars a {
   display: inline;
   color: #fff;
