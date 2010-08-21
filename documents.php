@@ -48,7 +48,7 @@ $(document).ready( function() {
 </div> <!-- Closes contentwrapper-->
 
 
-<?php get_sidebar(); ?>
+<?php include (TEMPLATEPATH . '/sidebar_pages.php'); ?>
 <div class="cleared"></div>
 
 </div><!-- Closes Main -->
