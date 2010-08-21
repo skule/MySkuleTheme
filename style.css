@@ -298,11 +298,14 @@ body {
   width: 930px;
   padding-bottom: 5px;
   }
+#contentwrapper ul li {
+	margin: 8px 0;
+}  
 #contentwrapper {
   float:left;
   width: 600px;
   margin: 0 0 15px 5px;
-  padding: 0 10px 15px 15px;
+  padding: 4px 10px 15px 15px;
   background: url(images/blackback.png);
   }
 #contentwrapper2 {
@@ -543,24 +546,16 @@ textarea#comment {
 /* Welcome section */
 
 #main #welcome {
-  margin: 0 0 20px 0;
-  padding: 0 0 5px 0;
+  margin: 0 0 5px 0px;
   background: url(images/bg-trans.png) repeat;
+  padding: 2px 2px;
+  border:1px solid #000;
   }
-#main #welcome h2 {
-  font-size: 14pt;
-  font-weight: normal;
 
-  color: #fff;
-  letter-spacing: -2px;
-  margin: 0 10px;
-  padding: 10px 0 3px 0;
-  }
 #main #welcome p {
   font-size: 9pt;
   color: #eee;  
-  margin: 0 10px;
-  padding: 6px 0;
+  padding: 6px 10px;
   }
 #main #welcome a {
   text-decoration: underline;
@@ -601,9 +596,9 @@ textarea#comment {
   color: #eee;
   }
 #sidebars .sidebarbox {
-  background: url(images/bg-trans.png) repeat;
-  padding: 2px 15px;
-  border:1px solid #000;
+  #background: url(images/bg-trans.png) repeat;
+  padding: 2px 5px;
+  #border:1px solid #000;
   }
 
 #sidebar_full {
@@ -621,13 +616,14 @@ textarea#comment {
   width: 160px;
   }
 
-#sidebars h2 {
+#sidebars h2, #main #welcome h2 {
   margin: 0;
-  padding: 0 0 8px 0;
+  padding: 5px 0 5px 5px;
   font-weight: normal;
-  font-size: 11pt;
+  font-size: 14pt;
   color: #fff;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
+  border-bottom:1px solid #0e2944; 
   }
 
 #sidebars table {
@@ -650,7 +646,7 @@ textarea#comment {
   }
 
 #sidebars ul ul li {
-  margin: 0;
+  margin: 0 0 0 10px;
   padding: 2px 2px 2px 16px;
   color: #eee;
   

@@ -13,7 +13,7 @@ $mysitefeed = get_bloginfo('rss2_url');
     echo "<p>" . get_option('welcomemessage') . "</p>";
     }
   } else {
-  echo "<h2>Hi! Welcome to $mysitename!</h2><p>Thanks for dropping by! Feel free to join the discussion by leaving comments, and stay updated by subscribing to the <a href='$mysitefeed'>RSS feed</a>. See ya around!</p>";
+  echo "<h2>Welcome to the new Skule.ca!</h2><p>Look around, check out some events happening at Skule and hang out with your fellow Engineers!</p>";
 }
  
 ?>

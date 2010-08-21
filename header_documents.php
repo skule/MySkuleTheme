@@ -31,7 +31,7 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/jqueryFileTree/jqueryFileTree.css" type="text/css" media="screen" />
 <style>
 	#fileTree {
-				width: 530px;
+				width: 560px;
 				border-top: solid 1px #BBB;
 				border-left: solid 1px #BBB;
 				border-bottom: solid 1px #FFF;
@@ -40,6 +40,7 @@
 				color:#fff;
 				overflow: scroll;
 				padding: 4px;
+				margin-top:5px;
 			}
 </style>
 </head>
