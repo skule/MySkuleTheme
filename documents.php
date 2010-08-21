@@ -37,9 +37,7 @@ $(document).ready( function() {
         collapseSpeed: -1,
       }, function(file) {
 		root_path = '<?php echo $_SERVER['DOCUMENT_ROOT'] . '/engsoc-documents/documents/'; ?>' 	 ;
-		
-        alert(file.substr(root_path.length));
-		window.location = '/engsoc-documents/documents/' + file.substr(root_path.length);
+		window.open('/engsoc-documents/documents/' + file.substr(root_path.length));
     });
 });
 </script>
