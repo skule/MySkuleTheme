@@ -300,7 +300,7 @@ body {
   }
 #contentwrapper {
   float:left;
-  width: 545px;
+  width: 600px;
   margin: 0 0 15px 5px;
   padding: 0 10px 15px 15px;
   background: url(images/blackback.png);
@@ -595,9 +595,9 @@ textarea#comment {
 
 /* Sidebars */
 #sidebars {
-  margin:0;
+  margin-left:10px;
   float: right;
-  width: 320px;
+  width: 290px;
   color: #eee;
   }
 #sidebars .sidebarbox {
