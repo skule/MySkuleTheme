@@ -22,7 +22,7 @@ get_header(); ?>
 		<?php query_posts('category_name=club&posts_per_page=100'); ?>
 
 		<?php 
-		$i = 1;
+		$i = 0;
 		while (have_posts()) : the_post(); ?>
 			<?php 
 			if($i % 5 == 0)
