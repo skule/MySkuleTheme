@@ -17,9 +17,7 @@ if (is_page( )) {
 
   }
   $children=wp_list_pages( 'echo=0&child_of=' . $page . '&title_li=' );
-  if ($children) {
-    $output = wp_list_pages ('echo=0&child_of=' . $page . '&title_li=<h2>' . $title.'</h2>');
-  }
+
 }
 echo $output;
 ?>
