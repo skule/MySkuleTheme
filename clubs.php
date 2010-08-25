@@ -2,7 +2,8 @@
 /*
 Template Name: Clubs
 */
-get_header(); ?>
+get_header(); 		
+?>
 
 <div id="main">
 
@@ -30,12 +31,11 @@ get_header(); ?>
 				echo "
 				</tr>
 				<tr> ";
-				
 			}
 			?>
 				<td>
 					<div class='clubdiv'>
-						<img src='/testclub.jpg' class='clubthumb' />
+						<img src='<?php echo get_post_meta($post->ID, 'web_name', true) ?>.jpg' class='clubthumb' />
 						<?php $shortname = get_post_meta($post->ID, 'name', true); ?>
 						<a href='#'><h3><?php echo $shortname; ?></h3></a>
 					</div>
