@@ -13,7 +13,7 @@ if (is_page( )) {
   $page = $post->ID;
   if ($post->post_parent) {
     $page = $post->post_parent;
-		$title = urlencode($post->post_title);
+		#$title = urlencode($post->post_title);
 
   }
   $children=wp_list_pages( 'echo=0&child_of=' . $page . '&title_li=' );
