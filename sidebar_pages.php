@@ -7,13 +7,13 @@
 <?php //include (TEMPLATEPATH . '/welcome.php'); ?>
 <?php
 //list all current sub=pages
-$output = wp_list_pages('echo=0&depth=1&title_li=<h2>All Pages </h2>');
+$output = wp_list_pages('echo=0&depth=1&title_li=<h2>All Pages</h2>');
 if (is_page( )) {
 	$title = 'Navigation';
   $page = $post->ID;
   if ($post->post_parent) {
     $page = $post->post_parent;
-		$title = $post->post_title;
+		$title = addslashes($post->post_title);
 
   }
   $children=wp_list_pages( 'echo=0&child_of=' . $page . '&title_li=' );
