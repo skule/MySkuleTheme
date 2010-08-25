@@ -37,7 +37,7 @@ get_header();
 					<div class='clubdiv'>
 						<img src='/engsoc-documents/avatars/<?php echo get_post_meta($post->ID, 'web_name', true) ?>.jpg' class='clubthumb' width='50px' height='50px'/>
 						<?php $shortname = get_post_meta($post->ID, 'name', true); ?>
-						<a href='#'><h3><?php echo $shortname; ?></h3></a>
+						<a href='<?php echo get_post_meta($post->ID, 'website', true) ?>'><h3><?php echo $shortname; ?></h3></a>
 					</div>
 				</td>
 			<?php
