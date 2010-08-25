@@ -19,7 +19,7 @@ get_header(); ?>
 		<?php $temp_query = $wp_query; ?>
 		<!-- Do stuff... -->
 
-		<?php query_posts('category_name=clubs&posts_per_page=100'); ?>
+		<?php query_posts('category_name=club&posts_per_page=100'); ?>
 
 		<?php 
 		$i = 1;
