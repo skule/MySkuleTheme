@@ -36,7 +36,7 @@ get_header(); ?>
 				<td>
 					<div class='clubdiv'>
 						<img src='/testclub.jpg' class='clubthumb' />
-						<a href='#'><h3><?php echo $post->post_title; ?></h3></a>
+						<a href='#'><h3><?php echo $post->name; ?></h3></a>
 					</div>
 				</td>
 			<?php
