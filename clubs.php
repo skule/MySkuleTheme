@@ -17,14 +17,9 @@ get_header();
   <div class="topContent">
 	<table id='clubtable'>
 		<tr>
-		<?php $temp_query = $wp_query; ?>
-		<!-- Do stuff... -->
-
-		<?php query_posts('category_name=club&posts_per_page=100'); ?>
-
-		<?php 
+		<?php $clubs = new WP_Query('category_name=club&posts_per_page=1000'); 
 		$i = 0;
-		while (have_posts()) : the_post(); ?>
+		foreach ($clubs->posts as $club): ?>
 			<?php 
 			if($i % 5 == 0)
 			{	
@@ -35,21 +30,20 @@ get_header();
 			?>
 				<td>
 					<div class='clubdiv'>
-						<img src='/engsoc-documents/avatars/<?php echo get_post_meta($post->ID, 'web_name', true) ?>.jpg' class='clubthumb' width='50px' height='50px'/>
-						<?php $shortname = get_post_meta($post->ID, 'name', true); ?>
-						<a href='<?php echo get_post_meta($post->ID, 'website', true) ?>'><h3><?php echo $shortname; ?></h3></a>
+						<img src='/engsoc-documents/avatars/<?php echo get_post_meta($club->ID, 'web_name', true) ?>.jpg' class='clubthumb' width='50px' height='50px'/>
+						<?php $shortname = get_post_meta($club->ID, 'name', true); ?>
+						<a href='<?php echo get_post_meta($club->ID, 'website', true) ?>'><h3><?php echo $shortname; ?></h3></a>
 					</div>
 				</td>
 			<?php
 			
 			$i++;
 			?>
-		<?php endwhile; ?>
-		<?php $wp_query = $temp_query; ?>
+		<?php endforeach; ?>
 
 
-	
-	
+		
+
 	</tr>
 	
 	</table>
